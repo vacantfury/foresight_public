@@ -38,8 +38,10 @@ anchors, with every number read from a fetched primary source at write time · t
 reasoning for any divergence from the anchor · what evidence would change the number.
 Bracketed `W#` tags cite the thesis cards in [`worldview.md`](worldview.md) — the argument
 layer beneath the claims, one card per mechanism, each carrying its strongest counterargument
-and the observables that would move it. `WT#` tags cite a scenario-tree layer still in the
-working repo; it is published after its next review round.
+and the observables that would move it. `WT#` tags cite the leaf worlds of the scenario tree
+in [`worldtree.md`](worldtree.md) — six branch questions in the order the world will answer
+them, eight coherent end-states with explicit probabilities. The tree's structure is reviewed;
+its edge numbers are declared priors, re-priced by Bayesian updating at each edition.
 
 ## Provenance
 
