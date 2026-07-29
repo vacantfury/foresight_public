@@ -13,6 +13,9 @@ The full edition, including the divergence table against tracked forecasting que
   number, market, or document on a named date. A claim that cannot be scored is not made.
 - **Claims are never edited after their edition is stamped.** Revisions are new claims in a
   later edition; the old ones stay on the record and are Brier-scored when their dates arrive.
+  The scoring rules and the resolution ledger are in [`scorecard.md`](scorecard.md) —
+  published empty on purpose: the first entry is due **2026-08-31**, so the promise is on the
+  record before any score is.
 - **The outside view comes first.** Each claim starts from a measured trend or a tracked
   forecasting question (Metaculus, Polymarket, Manifold, Swift Centre), and every step away
   from that anchor is argued in writing. The divergence table at the top of the edition shows
@@ -33,8 +36,10 @@ point: these are forecasts someone acts on, not commentary.
 Each claim carries: a probability and resolution date · the exact resolution test · the
 anchors, with every number read from a fetched primary source at write time · the written
 reasoning for any divergence from the anchor · what evidence would change the number.
-Bracketed `W#` / `WT#` tags cite a private worldview and scenario-tree reasoning layer that
-may be published in a later edition.
+Bracketed `W#` tags cite the thesis cards in [`worldview.md`](worldview.md) — the argument
+layer beneath the claims, one card per mechanism, each carrying its strongest counterargument
+and the observables that would move it. `WT#` tags cite a scenario-tree layer still in the
+working repo; it is published after its next review round.
 
 ## Provenance
 
