@@ -7,6 +7,13 @@ current probabilities; this file is the **resolution ledger** — a claim appear
 resolves and never leaves. Old editions' claims stay scoreable forever (design §2), and this
 is where they land.
 
+**Store-backed since 2026-08-13 (owner-ratified; the two-editions machinery gate explicitly
+lifted — "we do refactor now").** The ledger and calibration sections below are GENERATED
+from `state/forecasts.sqlite` (cooper v0.6.0's forecast score kind; scored-entity standard,
+psyche design §31) — resolutions are entered with `uv run python -m foresight resolve`, and
+the block re-renders; never hand-edit it. Ambiguous resolutions still score nothing and are
+recorded in the prose here, not in the store.
+
 **Backend.** Each edition's claims are mirrored as private Fatebook questions (tags
 `foresight`, `edition-v1`) at authoring time; resolutions are entered there (auto-Brier and
 calibration charts) and recorded here as the committed record. The question map lives in the
@@ -21,13 +28,14 @@ against the claim's resolution threshold, and the successor claim gets a sharper
 Multi-branch claims (F23's trichotomy) score with the multi-class Brier against the full
 recorded distribution, not any mirrored binary.
 
+<!-- foresight:generated (uv run python -m foresight render) -->
 ## Resolution ledger
 
-| F-ID | Claim (short) | Edition p | Resolved | Outcome | Brier | Notes |
+| F-ID | Claim (short) | Stated p | Resolved | Outcome | Brier | Notes |
 |---|---|---|---|---|---|---|
-| — | *first entry due at F25's resolution (resolve-by 2026-08-31)* | | | | | |
+| — | *no claims resolved yet* | | | | | |
 
 ## Calibration table
 
-Built once ≥10 claims have resolved — a reliability table on fewer is noise. Until then the
-per-claim Brier column above is the whole scorecard.
+Built once ≥10 claims have resolved — a reliability table on fewer is noise (0 so far). Until then the per-claim Brier column above is the whole scorecard.
+<!-- /foresight:generated -->
